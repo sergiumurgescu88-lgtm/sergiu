@@ -19,7 +19,7 @@ const pulseStyles = {
 
 export const PulsingBadge = ({ children, color }: PulsingBadgeProps) => {
   return (
-    <div className={`relative inline-flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-semibold ${colorStyles[color]}`}>
+    <div className={`relative inline-flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-medium ${colorStyles[color]}`}>
       <span className="relative flex h-2 w-2">
         <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${pulseStyles[color]}`} />
         <span className={`relative inline-flex rounded-full h-2 w-2 ${pulseStyles[color]}`} />

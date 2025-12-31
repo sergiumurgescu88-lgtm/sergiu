@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
-    --background: 220 25% 97%;
+    --background: 220 20% 96%;
     --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
@@ -42,9 +42,8 @@
 
     --radius: 0.75rem;
 
-    /* Custom gradients */
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(271 81% 56%));
-    --gradient-hero: linear-gradient(180deg, hsl(220 25% 97%) 0%, hsl(220 30% 95%) 50%, hsl(220 25% 97%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(220 20% 96%) 0%, hsl(220 25% 94%) 50%, hsl(220 20% 96%) 100%);
     --gradient-success: linear-gradient(135deg, hsl(142 71% 45%), hsl(160 84% 39%));
     --gradient-warning: linear-gradient(135deg, hsl(38 92% 50%), hsl(28 88% 55%));
     --gradient-text: linear-gradient(135deg, hsl(217 91% 60%), hsl(271 81% 56%), hsl(199 89% 48%));
@@ -94,7 +93,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
   }
 }
 
@@ -130,8 +129,8 @@
     animation: float 6s ease-in-out infinite 2s;
   }
 
-  .animate-glow {
-    animation: glow 2s ease-in-out infinite alternate;
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite 1s;
   }
 }
 
@@ -142,32 +141,4 @@
   50% {
     transform: translateY(-20px);
   }
-}
-
-@keyframes glow {
-  from {
-    box-shadow: 0 0 20px hsl(217 91% 60% / 0.3);
-  }
-  to {
-    box-shadow: 0 0 40px hsl(271 81% 56% / 0.4);
-  }
-}
-
-@keyframes pulse-ring {
-  0% {
-    transform: scale(0.8);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1);
-    opacity: 0.4;
-  }
-  100% {
-    transform: scale(0.8);
-    opacity: 0.8;
-  }
-}
-
-.animate-pulse-ring {
-  animation: pulse-ring 2s ease-in-out infinite;
 }
