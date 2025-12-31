@@ -96,7 +96,7 @@ export const translations = {
       },
       premium: {
         title: 'Premium Package: Efficiency and Innovation',
-        price: '€600 - €2,500/month',
+        price: '€699/month',
         subtitle: 'Complete digital transformation – Apps, Automation & Social Media',
         badge: 'Most popular',
         automation: {
@@ -292,7 +292,7 @@ export const translations = {
       },
       premium: {
         title: 'Paquete Premium: Eficiencia e Innovación',
-        price: '€600 - €2,500/mes',
+        price: '€699/mes',
         subtitle: 'Transformación digital completa – Apps, Automatización & Redes Sociales',
         badge: 'Más popular',
         automation: {
@@ -488,7 +488,7 @@ export const translations = {
       },
       premium: {
         title: 'Pachet Premium: Eficiență și Inovație',
-        price: '€600 - €2,500/lună',
+        price: '€699/lună',
         subtitle: 'Transformare digitală completă – Apps, Automatizare & Social Media',
         badge: 'Cel mai popular',
         automation: {
